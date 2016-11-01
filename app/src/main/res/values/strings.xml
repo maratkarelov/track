@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Attika: Sellers Time</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="auth">Авторизация</string>
+    <!-- Strings related to login -->
+    <string name="market_undefined">Торговая точка не выбрана</string>
+    <string name="market_id">ID Торговой точки</string>
+    <string name="market_identified">Торговая точка успешно идентифицирована</string>
+    <string name="sync_success">Данные успешно выгружены на сервер</string>
+    <string name="user_not_found">Пользователь не зарегистрирован</string>
+    <string name="password">Пароль</string>
+    <string name="INN">ИНН</string>
+    <string name="user">Пользователь</string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="worked_start">Старт в:</string>
+    <string name="worked_out">Отработано:</string>
+    <string name="signout_user">Выход пользователя</string>
+    <string name="save">Сохранить</string>
+    <string name="exit">Выход из настроек</string>
+    <string name="sync">Выгрузить на сервер</string>
+    <string name="sync_title">Не выгружено на сервер:</string>
+    <string name="session_title">Отработано всего:</string>
+
+    <string name="password_verification_description">Введите пароль для идентификации торговой точки.</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="password_is_empty">Пароль не может быть пустым</string>
+    <string name="no_network_connection_toast_error_msg">Отсутствует сетевое подключение</string>
+    <string name="sellers_updated">Список пользователей успешно обновлен (загружено %1$d элементов)</string>
+
+</resources>

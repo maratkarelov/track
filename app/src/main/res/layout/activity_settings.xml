@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/pad_6"
+    android:paddingLeft="@dimen/pad_6"
+    android:paddingRight="@dimen/pad_6"
+    android:paddingTop="@dimen/pad_6"
+    tools:context=".ui.activities.settings.SettingsActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/l_warehouse_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ua.digma.sellerstime.ui.views.clearableedittext.ClearableEditText
+            android:id="@+id/et_warehouse_code"
+            android:layout_width="match_parent"
+            style="?android:textAppearanceLarge"
+            android:layout_height="wrap_content"
+            android:hint="@string/market_id"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_init_warehouse"
+        style="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_warehouse_code"
+        android:layout_marginLeft="@dimen/pad_50"
+        android:layout_marginRight="@dimen/pad_50"
+        android:layout_marginTop="@dimen/pad_6"
+        android:background="@drawable/rectangle_accent_corner_12"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_exit"
+        style="?android:textAppearanceLarge"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_gray_main_2_corner_12"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/pad_30"
+        android:layout_marginRight="@dimen/pad_30"
+        android:layout_marginTop="16dp"
+        android:text="@string/exit"
+        />
+
+</RelativeLayout>

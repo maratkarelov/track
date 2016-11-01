@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+    </style>
+
+    <style name="sans_serif" parent="AppTheme.Widget.TextView">
+    </style>
+
+    <style name="st_12_green" parent="sans_serif">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+    <style name="st_12_black_main_1" parent="sans_serif">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_main_1</item>
+    </style>
+    <style name="st_14_black_main_1" parent="sans_serif">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_main_1</item>
+    </style>
+    <style name="st_14_black_main_1_bold" parent="st_14_black_main_1">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="st_14_blue_cloud_1" parent="sans_serif">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="st_16_primary_dark" parent="sans_serif">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

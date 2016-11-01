@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/pad_6"
+    android:paddingLeft="@dimen/pad_6"
+    android:paddingRight="@dimen/pad_6"
+    android:paddingTop="@dimen/pad_6"
+    tools:context=".ui.activities.timetracking.TimeTrackingActivity">
+
+    <TextView
+        android:id="@+id/tv_fio"
+        style="@style/st_16_primary_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <LinearLayout
+        android:id="@+id/l_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fio"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_start_title"
+                style="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/worked_start"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/tv_worked_out_title"
+                style="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/worked_out"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/pad_10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_start"
+                style="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/tv_worked_out"
+                style="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/btn_start_stop"
+        style="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_timer"
+        android:layout_marginLeft="@dimen/pad_50"
+        android:layout_marginRight="@dimen/pad_50"
+        android:layout_marginTop="@dimen/pad_6"
+        android:background="@drawable/button_tracking_selector"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/l_worked_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_sign_out"
+        android:layout_below="@+id/btn_start_stop"
+        android:layout_marginLeft="@dimen/pad_10"
+        android:layout_marginTop="@dimen/pad_6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/session_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_1"
+            android:background="@color/colorPrimaryDark"></View>
+
+        <ListView
+            android:id="@+id/lv_worked_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        style="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/pad_30"
+        android:layout_marginRight="@dimen/pad_30"
+        android:layout_marginTop="@dimen/pad_6"
+        android:background="@drawable/rectangle_gray_main_2_corner_12"
+        android:text="@string/signout_user"
+        />
+
+
+</RelativeLayout>

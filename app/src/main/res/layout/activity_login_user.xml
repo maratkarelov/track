@@ -1,0 +1,91 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/pad_6"
+    android:paddingLeft="@dimen/pad_6"
+    android:paddingRight="@dimen/pad_6"
+    android:paddingTop="@dimen/pad_6"
+    tools:context=".ui.activities.login.LoginActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/l_inn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ua.digma.sellerstime.ui.views.clearableedittext.ClearableEditText
+            android:id="@+id/et_inn"
+            style="?android:textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/INN"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        style="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_inn"
+        android:layout_marginLeft="@dimen/pad_50"
+        android:layout_marginRight="@dimen/pad_50"
+        android:layout_marginTop="@dimen/pad_6"
+        android:background="@drawable/rectangle_brown_corner_12"
+        android:text="@string/auth"
+        android:textColor="@color/white"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/l_worked_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_sync"
+        android:layout_below="@+id/btn_start"
+        android:layout_marginLeft="@dimen/pad_10"
+        android:layout_marginTop="@dimen/pad_6"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_sync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sync_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_1"
+            android:background="@color/colorPrimaryDark"></View>
+
+        <ListView
+            android:id="@+id/lv_worked_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sync"
+        style="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/pad_30"
+        android:layout_marginRight="@dimen/pad_30"
+        android:layout_marginTop="@dimen/pad_6"
+        android:background="@drawable/rectangle_accent_corner_12"
+        android:text="@string/sync"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
